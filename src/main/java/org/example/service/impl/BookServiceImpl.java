@@ -19,7 +19,7 @@ import java.util.Date;
 @Service
 @Transactional
 public class BookServiceImpl implements BookService {
-    @Autowired
+    @Autowired(required = false)
     private BookMapper bookMapper;
 
     /**

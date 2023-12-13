@@ -18,7 +18,7 @@ import java.util.Date;
 @Service
 public class UserServiceImpl  implements UserService {
     //注入userMapper
-    @Autowired
+    @Autowired(required = false)
     private UserMapper userMapper;
     //通过User的用户账号和用户密码查询用户信息
     @Override

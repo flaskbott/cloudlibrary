@@ -19,7 +19,7 @@ import java.util.Date;
 @Service
 @Transactional
 public class RecordServiceImpl implements RecordService {
-    @Autowired
+    @Autowired(required = false)
     private RecordMapper recordMapper;
 
     /**
